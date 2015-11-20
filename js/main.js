@@ -5,11 +5,8 @@ $(document).ready(function() {
     $(".p").css("background-color", colorChange());
   });
 
-<<<<<<< HEAD
   //PINWHEEL
-=======
   //MAKING THE PINWHEEL SPIN
->>>>>>> refs/remotes/origin/gh-pages
 	$("#pinWheel").click(function() {
 		if ($(this).css("animation-name") == "rotate") {
 			$(this).css("animation-name", "rotate-reverse");
@@ -21,11 +18,8 @@ $(document).ready(function() {
     audio.play();
 	});
 
-<<<<<<< HEAD
   //TARGET
-=======
   //TOGGLEING THE TARGET
->>>>>>> refs/remotes/origin/gh-pages
 	$("#target1").click(function() {
 		var target1 = $(this).attr("src");
 		if (target1 === "img/randomShapes/target1.png") {
@@ -38,7 +32,6 @@ $(document).ready(function() {
     audio.play();
 	});
 
-<<<<<<< HEAD
   //SHAPES AND NUMBERS
 	$(".shapes").click(function() {
 		var shape = shapeChange();
@@ -49,7 +42,7 @@ $(document).ready(function() {
 		var number = numberChange();
 		$(this).attr("src", number);
 	});
-=======
+
   //SHAPE, NUMBER, AND COLOR CHANGE
   $(".img").click(function() {
     var shape = shapeChange();
@@ -61,7 +54,6 @@ $(document).ready(function() {
     $(this).find(".shapes").attr("src", shape + color);
     $(this).find(".numbers").attr("src", number);
   });
->>>>>>> refs/remotes/origin/gh-pages
 });
 
 //NUMBER CHANGE
